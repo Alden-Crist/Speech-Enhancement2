@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noise Reduction</title>
+</head>
+<body>
+    <h1>Audio/Video Noise Reduction</h1>
+    <p>Remove background noise using AI!</p>
+
+    {% if error %}
+        <p style="color:red">{{ error }}</p>
+    {% endif %}
+
+    <form method="POST" enctype="multipart/form-data">
+        <label for="file">Upload your audio/video:</label>
+        <input type="file" name="file" accept=".mp3,.wav,.mp4,.avi" required>
+        <button type="submit">Start reducing!</button>
+    </form>
+
+    <p>Your processed file will be available for download after processing.</p>
+</body>
+</html>

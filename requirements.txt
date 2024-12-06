@@ -1,0 +1,15 @@
+# base ========
+torch>=1.8.1
+torchvision>=0.9.1
+librosa>=0.8.1
+pydub>=0.25.1
+pysoundfile
+moviepy
+
+# log experiment & plot
+matplotlib
+wandb
+
+# web deployment
+streamlit
+
